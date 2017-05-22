@@ -1,0 +1,83 @@
+.banner {
+    position: relative;
+	height: 70vh;
+    z-index: -1;
+}
+	
+
+
+.bannerpic {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+    
+}
+	
+#logo {
+	text-align: center;
+	position: absolute;
+	top: 45%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	border: 10px solid white;
+  	color: white;
+  	padding: 20px 10px;
+	}
+
+.arrow {
+	display: block;
+	margin: 20px 48%;
+	}
+
+.ingred {
+	
+	text-align: center;
+	width: 100%;
+  	margin: 0 auto;
+  	margin-top: 40px;
+  	font-family: 'Open Sans', sans-serif;
+  	
+	}
+
+.ingred h1 {
+	font-size: 64px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bolder;
+    color: black;
+	
+	}
+	
+.low {
+	text-align: left;
+	margin: 2vh auto; 
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 18px;
+	line-height: 160%;	
+	}
+
+.learnMore {
+	text-align: center;
+	margin: 20px auto;
+	margin-right: 40px;
+    
+    a {    
+    padding: 20px 0;
+    font-size: 18px;    
+    }
+    
+	}
+
+@media only screen and (max-width: 640px) {
+    .ingred h1{
+    font-size: 48px;
+    }
+}
+	
+@media (min-width: 600px) {
+  .low {
+    width:680px;
+  }
+}

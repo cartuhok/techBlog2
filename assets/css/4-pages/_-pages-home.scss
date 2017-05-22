@@ -1,0 +1,56 @@
+.posts {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#h1a {
+  text-decoration: none;
+  color: black;
+  font-size: 64px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+.posts:first-child {
+	padding-top: 60px;
+}
+
+
+.posts {
+  text-align: left;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 10px;
+}
+
+.posts p {
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+}
+
+
+
+#date {
+  padding-top: 20px;
+}
+
+#readmore {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  #h1a {
+    font-size: 34px;
+  }
+}
+@media (min-width: 600px) {
+  .posts {
+    width: 680px;
+    }
+}
+
+
+

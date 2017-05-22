@@ -1,0 +1,87 @@
+form {
+     position: relative;
+     bottom: -180px;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column; 
+     align-items: center;
+     justify-content: center;
+}
+
+.email {
+  margin-top: 80px;
+  width: 400px;
+  height: 30px;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.email:focus {
+  outline: none;
+  -moz-box-shadow: .5px .5px 1.5px rgba(0,0,0,.2);
+-webkit-box-shadow: .5px .5px 1.5px rgba(0,0,0,.2);
+box-shadow: .5px .5px 1.5px rgba(0,0,0,.2);
+}
+
+.message {
+  width: 400px;
+  margin: 30px 30px;
+  right: 210px;
+  height: 200px;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 2px;
+  font-size: 12px;
+
+}
+
+.message:focus {
+  outline: none;
+  -moz-box-shadow: .5px .5px 1.5px rgba(0,0,0,.2);
+-webkit-box-shadow: .5px .5px 1.5px rgba(0,0,0,.2);
+box-shadow: .5px .5px 1.5px rgba(0,0,0,.2);
+}
+
+input, textarea {
+  padding-left: 8px;
+}
+textarea {
+  padding-top: 8px;
+}
+
+.button {
+ padding: 8px 48px;
+    border: none;
+    border-radius: 2px;
+    background: #BD5248;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+button:hover {
+  background-color: lighten($link-color, 20%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 640px) {
+    .email {
+  width: 300px;
+    }
+    .message {
+  width: 300px;
+    }
+}
+
+@media (min-width: 600px) {
+  .email {
+  width: 657px;
+    }
+    .message {
+  width: 657px;
+    }
+}
+

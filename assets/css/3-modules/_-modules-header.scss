@@ -1,0 +1,160 @@
+.barNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: #fbfbfb;
+  border-bottom: 3px solid #f5f5f5;
+  height: 72px;
+}
+
+.barNav a:first-child {
+  margin-right: auto;
+  font-size: 48px;
+  margin-top: -16px;
+  cursor: pointer;
+}
+
+.barNav a {
+ padding: 24px;
+ text-align: center;
+ font-size: 16px;
+ font-weight: 600;
+ background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #fbfbfb 50%, #BD5248 51%);
+    -webkit-transition: background-position .15s;
+    -moz-transition: background-position .15s;
+    transition: background-position .15s;
+    overflow: hidden;
+}
+
+
+.barNav a:first-child:hover {
+    text-decoration: none;
+    background: #fbfbfb;
+    color:  #BD5248;
+} 
+
+.barNav a:hover {
+
+color: white;
+background-position: 0 100%;
+} 
+
+.hamburger {
+  position: fixed;
+  z-index: 9999;
+  padding: 15px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger div {
+  background-color: #BD5248;
+  border-radius: 1px;
+  height: 6px;
+  width: 30px;
+}
+.hamburger div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+nav {
+  background-color: white;
+  display: inline-block;
+  position: fixed;
+  background-color: #f8f9f8;
+  height: 100vh;
+  width: 225px;
+  left: -225px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  z-index: 999;
+}
+nav .logo {
+  margin: 12vh 0;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+  z-index: 999;
+}
+nav a:hover {
+  background-color: #f5f5f5;
+}
+
+nav footer {
+  width: 225px;
+  text-align: center;
+  position: absolute;
+  padding: 5px;
+  bottom: 0;
+  color: #959595;
+}
+nav footer p {
+  font-size: 0.85em;
+}
+
+.sidenav-active .cover {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 5000;
+  -webkit-transition: background-color .3s, -webkit-transform 0.3s;
+  transition: background-color .3s, -webkit-transform 0.3s;
+  transition: background-color .3s, transform 0.3s;
+  transition: background-color .3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+
+nav, .main, .hamburger, .cover {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.sidenav-active nav, .sidenav-active .main, .sidenav-active .hamburger, .sidenav-active .cover {
+  -webkit-transform: translateX(225px);
+          transform: translateX(225px);
+}
+
+.noscroll {
+  position: relative;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .barNav a {
+        flex: 1;
+    }
+    .barNav h1 {
+        padding-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+  .barNav {
+        display: none;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+    .cover, .hamburger {
+        display: none !important;
+  }
+}
+

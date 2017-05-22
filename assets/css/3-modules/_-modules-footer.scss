@@ -1,0 +1,38 @@
+.foot{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: #fbfbfb;
+  height: 72px;
+  border-top: 2px solid #f5f5f5;
+}
+
+.foot a:last-child {
+  margin-left: auto;
+  font-size: 48px;
+  margin-top: -16px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 24px;
+  font-size: 48px;
+}
+
+.foot a {
+ text-align: center;
+ padding-left: 24px;
+ padding-top: 16px;
+ font-size: 34px;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .foot a {
+        flex: 1;
+
+    }
+    
+    .foot {
+        padding-right: 24px;
+    }
+
+}
